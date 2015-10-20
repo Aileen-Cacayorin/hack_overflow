@@ -1,15 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/question_spec.rb": [
+      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/answer_spec.rb": [
         1,
         null,
         1,
         2,
         2,
-        null,
         2,
-        null,
         null
       ],
       "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/rails_helper.rb": [
@@ -325,13 +323,31 @@
         null,
         null
       ],
+      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/answer.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
       "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/question.rb": [
+        1,
         1,
         1,
         1,
         null,
         1,
         1,
+        null
+      ],
+      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/tag.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/user.rb": [
@@ -359,6 +375,15 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
@@ -367,13 +392,12 @@
         null,
         1,
         null,
-        1,
-        1,
-        1,
         null,
         1,
         1,
         null,
+        1,
+        1,
         null,
         null,
         null,
@@ -426,6 +450,29 @@
         null,
         null,
         null,
+        null,
+        null,
+        null
+      ],
+      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/question_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/tag_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        2,
         null,
         null
       ],
@@ -446,6 +493,6 @@
         null
       ]
     },
-    "timestamp": 1445315313
+    "timestamp": 1445318474
   }
 }
