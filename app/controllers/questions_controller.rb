@@ -21,14 +21,31 @@ class QuestionsController < ApplicationController
       flash[:danger] = "Oops, something went wrong and your question wasn't added."
       render :new
     end
+  end
+
+  def show
+  end
+
+  def edit
 
   end
+
+  def update
+    if @question.update(question_params)
+      flash[:success] = "Question change saved"
+      redirect_to question_path(@question)
+    else
+      flash[:danger] = "Something went wrong and the changes were not saved."
+      redirect_to :back
+    end
+  end
+
 
   private
 
   def set_default
     @questions = Question.all
-    @question = Question.find(param[:id])
+    @question = Question.find(params[:id])
   end
 
   def question_params

@@ -1,0 +1,19 @@
+<div class="container">
+
+  <h1> <%= @question.title %> </h1>
+  <p><%= link_to "Edit", edit_question_path(@question) %> | <%= link_to "Delete", question_path(@question), :method => 'delete' %> </p>
+
+  <h3> <%= @question.user.username %> </h3>
+  <h3> <%= @question.votes %> </h3>
+  <h3> Asked:  <%= @question.created_at.strftime("%b %d %Y") %> ago</h3>
+
+
+  <p><%= @question.body %> </p>
+
+  <h4>Tags:</h4>
+  <% if @question.tags.any? %>
+    <% @question.tags.each do |tag| %>
+      <%= tag.name %> |
+    <% end %>
+  <% end %>
+</div>
