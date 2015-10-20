@@ -1,0 +1,15 @@
+<h3>Answer this question</h3>
+
+<%= render 'layouts/errors', :object => @answer %>
+
+<div class="container">
+  <%= form_for [@question, @answer] do |f| %>
+  <div class="form-group">
+    <%= f.label :response %>
+    <%= f.text_area :response, class: 'form-control' %>
+  </div>
+
+  <%= f.submit "Submit", class: 'btn btn-primary' %>
+
+  <% end %>
+</div>

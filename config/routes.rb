@@ -8,6 +8,21 @@ Rails.application.routes.draw do
 
   resources :users
   resources :sessions
+
+  resources :questions do
+    resources :answers
+  end
+  
+  resources :tags
+
+
+      # resources :questions do
+      #   resources :tags, only: [:index]
+      # end
+      # resources :tags, except: [:index]
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

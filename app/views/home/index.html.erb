@@ -2,3 +2,41 @@
 <% if current_user && current_user.admin %>
   <h3>logged in as admin</h3>
 <% end %>
+
+<div class="container">
+  <%= link_to "Ask a question", new_question_path %> |
+  <%= link_to "Tags", tags_path %>
+</div>
+
+<div class="container">
+  <div class= "row">
+    <div class="col-md-8">
+      <% if @questions.any? %>
+        <h3>Recent Questions</h3>
+        <ul>
+          <% @questions.each do |question| %>
+            <div class="row">
+              <li> <%= link_to question.title, question_path(question)  %> </li>
+              <p> Posted by: <%= question.user.username %> | Votes: <%= question.votes %> | Posted: <%= time_ago_in_words(question.created_at) %> ago</p> 
+
+            </div>
+          <% end %>
+        </ul>
+      <% else %>
+        <h3>No questions yet!</h3>
+      <% end %>
+    </div>
+    <div class="col-md-4">
+      <% if @tags.any? %>
+      <h3>Tags:</h3>
+        <ul>
+          <% @tags.each do |tag| %>
+            <li> <%= link_to tag.name, tag_path(tag) %> </li>
+          <% end %>
+        </ul>
+      <% else %>
+        <h3>No tags yet</h3>
+      <% end %>
+    </div>
+  </div>
+</div>
