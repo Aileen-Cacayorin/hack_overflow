@@ -24,6 +24,8 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @answers = @question.answers
+    @answer = Answer.new
   end
 
   def edit
@@ -47,7 +49,7 @@ class QuestionsController < ApplicationController
     else
       flash[:danger] = "Something went wrong and the question was not deleted"
       redirect_to :back
-    end  
+    end
   end
 
 

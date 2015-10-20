@@ -3,8 +3,8 @@
   <h1> <%= @question.title %> </h1>
   <p><%= link_to "Edit", edit_question_path(@question) %> | <%= link_to "Delete", question_path(@question), :method => 'delete' %> </p>
 
-  <h3> <%= @question.user.username %> </h3>
-  <h3> <%= @question.votes %> </h3>
+  <h3> Posted by: <%= @question.user.username %> </h3>
+  <h3> Votes: <%= @question.votes %> </h3>
   <h3> Asked:  <%= @question.created_at.strftime("%b %d %Y") %> ago</h3>
 
 
@@ -16,4 +16,23 @@
       <%= tag.name %> |
     <% end %>
   <% end %>
+</div>
+
+<div class="container">
+  <% if @answers.any? %>
+
+    <h3>Answers: </h3>
+    <% @answers.each do |answer| %>
+      <div class="row">
+        <p><%= answer.response %></p>
+        <p> Answered by: <%= answer.user.username %> | <%= answer.created_at %></p>
+        <p> Votes: <%= answer.votes%></p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="container">
+  <h3>Add your answer</h3>
+  <%= render 'answers/form' %>
 </div>
