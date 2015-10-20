@@ -12,3 +12,12 @@ User.create(
   admin: true
 
 )
+
+Tag.create(:name => "ruby")
+Tag.create(:name => "rails")
+Tag.create(:name => "ember")
+Tag.create(:name => "html")
+Tag.create(:name => "css")
+Tag.create(:name => "javascript")
+Tag.create(:name => "php")
+Tag.create(:name => "python")
