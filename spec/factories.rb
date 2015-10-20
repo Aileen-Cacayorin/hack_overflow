@@ -6,6 +6,7 @@ FactoryGirl.define do
     body 'is it better to use password_digest?'
 
 
+
   end
 
   factory :user do
@@ -14,6 +15,9 @@ FactoryGirl.define do
     password ('testpassword')
  end
 
+ factory :answer do
+   response 'this is the answer'
+ end
 
 
 

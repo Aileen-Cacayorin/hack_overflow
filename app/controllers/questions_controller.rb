@@ -51,7 +51,15 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    if @question.destroy
+    if @question.answers.any?
+      @question.answers.each do |answer|
+        answer.destroy
+
+      end
+      @question.destroy
+      flash[:success] = "Question deleted"
+      redirect_to root_path
+    elsif @question.destroy
       flash[:success] = "Question deleted"
       redirect_to root_path
     else

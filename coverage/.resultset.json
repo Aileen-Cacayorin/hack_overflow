@@ -8,6 +8,22 @@
         2,
         2,
         2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/hackoverflow/spec/rails_helper.rb": [
@@ -345,6 +361,14 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -456,6 +480,14 @@
         1,
         null,
         1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/hackoverflow/app/models/question.rb": [
@@ -511,11 +543,15 @@
         null,
         null,
         null,
+        null,
         1,
         1,
         1,
         1,
         null,
+        null,
+        1,
+        1,
         null,
         null,
         null,
@@ -660,6 +696,6 @@
         null
       ]
     },
-    "timestamp": 1445368999
+    "timestamp": 1445370091
   }
 }

@@ -1,7 +1,8 @@
 <div class="container">
 
   <h1> <%= @question.title %> </h1>
-  <p><%= link_to "Edit", edit_question_path(@question) %> | <%= link_to "Delete", question_path(@question), :method => 'delete' %> </p>
+  <p><%= link_to "Edit", edit_question_path(@question) %> |
+    <%= link_to "Delete", question_path(@question), :method => 'delete' %> </p>
   <h3><%= link_to "Upvote", question_path(@question, :vote => 'up'), method: "patch" %> |  <%= link_to "Downvote", question_path(@question, :vote => 'down'), method: "patch" %></h3>
 
 
@@ -29,6 +30,9 @@
         <p><%= answer.response %></p>
         <p> Answered by: <%= answer.user.username %> | <%= answer.created_at %></p>
         <p> Votes: <%= answer.votes%></p>
+        <h4><%= link_to "Upvote", question_answer_path(@question, answer, :vote => 'up'), method: "patch" %> |
+            <%= link_to "Downvote", question_answer_path(@question, answer, :vote => 'down'), method: "patch" %></h4>
+
       </div>
     <% end %>
   <% end %>
