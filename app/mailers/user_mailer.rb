@@ -17,9 +17,10 @@ class UserMailer < ApplicationMailer
   #
   #   en.user_mailer.notification_mailer.subject
   #
-  def notification_mailer
-    @greeting = "Hi"
+  def notification_mailer(user, question)
+    @user = user
+    @question = question
 
-    mail to: user.email, subject: "Welcome to Hack Overflow!"
+    mail to: user.email, subject: "Your question has received a response"
   end
 end

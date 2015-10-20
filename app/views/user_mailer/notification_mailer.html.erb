@@ -1,5 +1,4 @@
-<h1>UserMailer#notification_mailer</h1>
+<h3><%= @user.username%>,</h3>
 
-<p>
-  <%= @greeting %>, find me in app/views/user_mailer/notification_mailer.html.erb
-</p>
+<p> Your question has received a response! </p>
+<p> Check it out here: <%= link_to @question.title, question_url(@question) %> </p>
