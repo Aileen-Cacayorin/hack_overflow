@@ -5,7 +5,11 @@ class User < ActiveRecord::Base
 
   validates_uniqueness_of :email, :username
 
+  after_create :send_confirmation_email
 
+  def send_confirmation_email
+    UserMailer.signup_confirmation(self).deliver
+  end
 
 
 
