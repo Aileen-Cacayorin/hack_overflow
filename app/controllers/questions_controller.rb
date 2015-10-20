@@ -40,6 +40,16 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def destroy
+    if @question.destroy
+      flash[:success] = "Question deleted"
+      redirect_to root_path
+    else
+      flash[:danger] = "Something went wrong and the question was not deleted"
+      redirect_to :back
+    end  
+  end
+
 
   private
 
