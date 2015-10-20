@@ -5,4 +5,12 @@ class Question < ActiveRecord::Base
 
   validates :title, :presence => true
   validates :body, :presence => true
+
+  def upvote
+    self.votes += 1
+  end
+
+  def downvote
+    self.votes -= 1
+  end
 end

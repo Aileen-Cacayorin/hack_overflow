@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/answer_spec.rb": [
+      "/Users/Guest/Desktop/hackoverflow/spec/models/answer_spec.rb": [
         1,
         null,
         1,
@@ -10,7 +10,7 @@
         2,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/rails_helper.rb": [
+      "/Users/Guest/Desktop/hackoverflow/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -73,14 +73,14 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/environment.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/application.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/application.rb": [
         1,
         null,
         1,
@@ -117,12 +117,12 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/boot.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/environments/test.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/environments/test.rb": [
         1,
         null,
         null,
@@ -166,7 +166,7 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/assets.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -179,7 +179,7 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/backtrace_silencers.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -188,18 +188,18 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/cookies_serializer.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/filter_parameter_logging.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/inflections.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -217,18 +217,18 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/mime_types.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/session_store.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/initializers/wrap_parameters.rb": [
+      "/Users/Guest/Desktop/hackoverflow/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -244,33 +244,8 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/controllers/application_controller.rb": [
+      "/Users/Guest/Desktop/hackoverflow/app/controllers/answers_controller.rb": [
         1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/controllers/home_controller.rb": [
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/controllers/sessions_controller.rb": [
         1,
         null,
         1,
@@ -278,32 +253,6 @@
         null,
         1,
         0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/controllers/users_controller.rb": [
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
         0,
         0,
         0,
@@ -323,7 +272,185 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/answer.rb": [
+      "/Users/Guest/Desktop/hackoverflow/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/app/controllers/home_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/app/controllers/questions_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/app/controllers/sessions_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/app/controllers/tags_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/app/controllers/users_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/app/models/answer.rb": [
         1,
         1,
         1,
@@ -331,7 +458,7 @@
         1,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/question.rb": [
+      "/Users/Guest/Desktop/hackoverflow/app/models/question.rb": [
         1,
         1,
         1,
@@ -339,45 +466,31 @@
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/tag.rb": [
+      "/Users/Guest/Desktop/hackoverflow/app/models/tag.rb": [
         1,
         1,
         null,
         1,
-        null,
-        null,
-        null
-      ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/app/models/user.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/factories.rb": [
-        null,
-        1,
-        null,
-        1,
+      "/Users/Guest/Desktop/hackoverflow/app/models/user.rb": [
         1,
         1,
         1,
         null,
         null,
-        1,
-        1,
-        1,
         1,
         null,
         null,
@@ -387,7 +500,30 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/config/routes.rb": [
+      "/Users/Guest/Desktop/hackoverflow/spec/factories.rb": [
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/hackoverflow/config/routes.rb": [
         1,
         null,
         1,
@@ -398,6 +534,21 @@
         null,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -454,7 +605,7 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/question_spec.rb": [
+      "/Users/Guest/Desktop/hackoverflow/spec/models/question_spec.rb": [
         1,
         null,
         1,
@@ -464,9 +615,25 @@
         2,
         2,
         null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/tag_spec.rb": [
+      "/Users/Guest/Desktop/hackoverflow/spec/models/tag_spec.rb": [
         1,
         null,
         1,
@@ -476,7 +643,7 @@
         null,
         null
       ],
-      "/Users/aileencacayorin/Desktop/stack_overflow_clone/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/hackoverflow/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -493,6 +660,6 @@
         null
       ]
     },
-    "timestamp": 1445318474
+    "timestamp": 1445368999
   }
 }
