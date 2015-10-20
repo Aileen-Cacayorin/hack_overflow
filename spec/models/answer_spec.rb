@@ -7,7 +7,9 @@ describe Answer do
 
   describe '#upvote' do
     it 'increases the vote count by 1' do
-      answer = FactoryGirl.create(:answer)
+      user = FactoryGirl.create(:user)
+      question = user.questions(FactoryGirl.create(:question))
+      answer = question.answers(FactoryGirl.create(:answer))
       answer.upvote
       expect(answer.votes).to eq 1
     end

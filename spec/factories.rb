@@ -17,6 +17,7 @@ FactoryGirl.define do
 
  factory :answer do
    response 'this is the answer'
+   question
  end
 
 

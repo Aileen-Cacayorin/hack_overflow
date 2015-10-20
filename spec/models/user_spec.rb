@@ -11,4 +11,9 @@ describe User do
     expect(user.admin?).to eq false
   end
 
+  it "sends an email when the user is created" do
+    user = FactoryGirl.create(:user)
+    ActionMailer::Base.deliveries.expect(last).to eq [user.email]
+  end
+
 end

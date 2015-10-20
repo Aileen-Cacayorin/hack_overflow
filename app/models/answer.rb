@@ -14,7 +14,7 @@ class Answer < ActiveRecord::Base
   end
 
   def send_notification_email
-    UserMailer.notification_mailer(self.question.user, self.question ).deliver_now
+    UserMailer.notification_mailer(self.question.user, self.question).deliver_now
     question = self.question
   end
 end
