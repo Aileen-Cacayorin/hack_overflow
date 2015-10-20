@@ -11,4 +11,10 @@ class ApplicationController < ActionController::Base
 
   helper_method :current_user
 
+  def authorize
+    if current_user.nil?
+      flash[:danger]="You must be logged in to do that"
+      redirect_to new_session_path
+    end
+  end
 end

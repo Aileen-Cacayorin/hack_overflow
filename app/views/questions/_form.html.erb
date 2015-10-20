@@ -1,0 +1,24 @@
+<h1>Ask a new Question</h1>
+
+<%= render 'layouts/errors', :object => @question %>
+
+<div class="container">
+  <%= form_for @question do |f| %>
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :body%>
+    <%= f.text_area :body, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label "Add tags to this post" %>
+    <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name  %>
+  </div>
+
+  <%= f.submit "Add post", class: 'btn btn-primary' %>
+
+  <% end %>
+</div>
