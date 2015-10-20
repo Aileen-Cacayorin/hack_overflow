@@ -13,7 +13,7 @@ gem 'bootstrap-sass',       '3.2.0.0'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem "font-awesome-rails"
-gem 'factory_girl_rails'
+
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -42,4 +42,6 @@ end
 group :test do
   gem 'shoulda-matchers', github: 'thoughtbot/shoulda-matchers'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end

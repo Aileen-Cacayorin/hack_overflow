@@ -7,8 +7,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      session[:id] = @user.id
-      flash[:success] = "Signup successful!"
+      session[:user_id] = @user.id
+      flash[:success] = "Signup successful! You are now logged in."
       redirect_to root_path
     else
       flash[:danger] = "Signup failed. Please try again."

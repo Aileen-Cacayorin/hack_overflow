@@ -1,4 +1,4 @@
 <h1>This is the homepage</h1>
-<% if current_user.admin %>
+<% if current_user && current_user.admin %>
   <h3>logged in as admin</h3>
 <% end %>

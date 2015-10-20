@@ -50,6 +50,9 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
+  config.include FactoryGirl::Syntax::Methods
+end
+
   Shoulda::Matchers.configure do |config|
   config.integrate do |with|
     with.test_framework :rspec
