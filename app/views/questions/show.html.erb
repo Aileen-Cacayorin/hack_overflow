@@ -2,10 +2,12 @@
 
   <h1> <%= @question.title %> </h1>
   <p><%= link_to "Edit", edit_question_path(@question) %> | <%= link_to "Delete", question_path(@question), :method => 'delete' %> </p>
+  <h3><%= link_to "Upvote", question_path(@question, :vote => 'up'), method: "patch" %> |  <%= link_to "Downvote", question_path(@question, :vote => 'down'), method: "patch" %></h3>
 
-  <h3> Posted by: <%= @question.user.username %> </h3>
-  <h3> Votes: <%= @question.votes %> </h3>
-  <h3> Asked:  <%= @question.created_at.strftime("%b %d %Y") %> ago</h3>
+
+  <h4> Posted by: <%= @question.user.username %> </h4>
+  <h4> Votes: <%= @question.votes %> </h4>
+  <h4> Asked:  <%= @question.created_at.strftime("%b %d %Y") %> ago</h4>
 
 
   <p><%= @question.body %> </p>

@@ -33,7 +33,15 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    if @question.update(question_params)
+    if params[:vote] == 'up'
+      @question.upvote
+      @question.save
+      redirect_to question_path(@question)
+    elsif params[:vote] == 'down'
+      @question.downvote
+      @question.save
+      redirect_to question_path(@question)
+    elsif @question.update(question_params)
       flash[:success] = "Question change saved"
       redirect_to question_path(@question)
     else
