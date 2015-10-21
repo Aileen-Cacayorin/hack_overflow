@@ -24,6 +24,7 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    @user = @question.user
     @answers = @question.answers
     @answer = Answer.new
   end

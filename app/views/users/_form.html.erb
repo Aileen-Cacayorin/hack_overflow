@@ -1,7 +1,7 @@
 <h1>Sign Up</h1>
 <%= render 'layouts/errors', :object => @user %>
 
-<%= form_for @user do |f| %>
+<%= form_for @user, html: { multipart: true }  do |f| %>
   <div class="form-group">
     <%= f.label :email %><br />
     <%= f.text_field :email, class: 'form-control' %>
@@ -18,5 +18,11 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, class: 'form-control' %>
   </div>
+
+  <div class="form-group">
+    <%= f.label :avatar %><br />
+    <%= f.file_field :avatar, as: :file, class: 'form-control' %>
+  </div>
+
   <div class="form-group"><%= f.submit "Sign Up" %></div>
 <% end %>
