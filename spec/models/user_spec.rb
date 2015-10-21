@@ -13,7 +13,7 @@ describe User do
 
   it "sends an email when the user is created" do
     user = FactoryGirl.create(:user)
-    ActionMailer::Base.deliveries.expect(last).to eq [user.email]
+    expect(ActionMailer::Base.deliveries.last).to eq [user.email]
   end
 
 end

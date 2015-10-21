@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_many :questions
 
 
-  validates_uniqueness_of :email, :username
+  # validates_uniqueness_of :email, :username
 
   after_create :send_confirmation_email
 

@@ -1,4 +1,6 @@
 class TagsController < ApplicationController
+  before_action 
+
   def new
   end
 
@@ -6,6 +8,7 @@ class TagsController < ApplicationController
   end
 
   def show
+
 
   end
 

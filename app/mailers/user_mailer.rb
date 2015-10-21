@@ -20,7 +20,7 @@ class UserMailer < ApplicationMailer
   def notification_mailer(user, question)
     @user = user
     @question = question
-
+  
     mail to: user.email, subject: "Your question has received a response"
   end
 end
